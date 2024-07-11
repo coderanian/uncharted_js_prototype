@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "MontserratBold";
+  src: url("/src/components/common/style/montserrat-v25-latin-ext-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/src/components/common/style/montserrat-v25-latin-ext-regular.ttf") format("truetype");
+}
+.dashboard-component {
+  background: white;
+  position: relative;
+  height: auto;
+  padding: 30px;
+  font-size: 13.92px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: #1c3742;
+}
+
+h5 {
+  font-family: "MontserratBold", sans-serif;
+}
+
+.error-msg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.component-container, .table-container {
+  margin-top: 15px;
+}
+
+.table-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.sticky-header {
+  font-family: "MontserratBold", sans-serif;
+  font-weight: 700;
+  font-size: 16px !important;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.sticky-footer {
+  font-family: "MontserratBold", sans-serif;
+  font-weight: 700;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

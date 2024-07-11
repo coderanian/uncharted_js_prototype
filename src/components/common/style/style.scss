@@ -1,0 +1,50 @@
+$base-color: #1c3742;
+$padding: 30px;
+$margin: 15px;
+$height: 300px;
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: url('/src/components/common/style/montserrat-v25-latin-ext-700.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/components/common/style/montserrat-v25-latin-ext-regular.ttf') format('truetype');
+}
+
+.dashboard-component {
+  background: white;
+  position: relative;
+  height: auto;
+  padding: $padding;
+  font-size: 16px * 0.87;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: $base-color;
+}
+
+h5 {
+    font-family: "MontserratBold", sans-serif;
+}
+
+@mixin component-container {
+  margin-top: $margin;
+}
+
+.error-msg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.error-msg-scorecard {
+
+}
+
+.component-container {
+  @include component-container;
+}

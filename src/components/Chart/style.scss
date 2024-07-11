@@ -1,0 +1,6 @@
+@import "../common/style/style";
+
+.chart-component {
+  @extend .component-container;
+  min-height: $height;
+}

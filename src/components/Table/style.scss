@@ -1,0 +1,26 @@
+@import "../common/style/style";
+//@import "bootstrap.css";
+
+.table-container {
+  @extend .component-container;
+  max-height: $height;
+  overflow-y: auto;
+}
+
+.sticky-header {
+  font-family: 'MontserratBold', sans-serif;
+  font-weight: 700;
+  font-size: 16px !important;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.sticky-footer {
+  font-family: 'MontserratBold', sans-serif;
+  font-weight: 700;
+  position: sticky;
+  bottom: 0;
+  z-index: 1
+}

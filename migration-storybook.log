@@ -1,0 +1,48 @@
+🔎 checking possible migrations..
+
+🔎 found a 'remove-jest-testing-library' migration:
+╭ Automigration detected ──────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                              │
+│   Attention: We've detected that you're using the following packages which are known to be incompatible since Storybook 8:   │
+│                                                                                                                              │
+│   - @storybook/testing-library                                                                                               │
+│                                                                                                                              │
+│   We will uninstall them for you and install @storybook/test instead.                                                        │
+│                                                                                                                              │
+│   Also, we can help you migrate your stories to use the new package.                                                         │
+│                                                                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+? Do you want to run the 'remove-jest-testing-library' migration on your project? » (Y/n)√ Do you want to run the 'remove-jest-testing-library' migration on your project? ... yes
+
+An error occurred while installing dependencies:
+wnt.default is not a function
+❌ error when running remove-jest-testing-library migration
+HandledError: TypeError: wnt.default is not a function
+    at QJ.addDependencies (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\@storybook\core\dist\common\index.cjs:153206:72)
+    at async Object.run (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:534:296)
+    ... 3 lines matching cause stack trace ...
+    at async Command.<anonymous> (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:728:2867) {
+  handled: true,
+  cause: TypeError: wnt.default is not a function
+      at QJ.runAddDeps (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\@storybook\core\dist\common\index.cjs:153512:20)
+      at async QJ.addDependencies (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\@storybook\core\dist\common\index.cjs:153203:9)
+      at async Object.run (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:534:296)
+      at async runFixes (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:654:1794)
+      at async automigrate (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:652:1620)
+      at async doAutomigrate (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:652:636)
+      at async Command.<anonymous> (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:728:2867)
+}
+
+
+⚠️  failed to check fix autodocs-tags
+
+Error: ❌ Failed to remove the deprecated docs.autodocs setting from .storybook\main.js.
+
+There is no preview config file in which to add the autodocs tag.
+
+Please perform the migration by hand: https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#mainjs-docsautodocs-is-deprecated
+    at Object.check (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:586:542)
+    at runFixes (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:652:2922)
+    at async automigrate (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:652:1620)
+    at async doAutomigrate (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:652:636)
+    at async Command.<anonymous> (C:\Users\Husa\AppData\Local\npm-cache\_npx\eb8bf615e50a412a\node_modules\storybook\dist\generate.cjs:728:2867)
