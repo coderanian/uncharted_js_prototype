@@ -26,7 +26,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": ["prettier --write", "eslint --quiet --fix", "git add"]
   },
   "eslintConfig": {
     "extends": [
@@ -62,9 +68,19 @@
     "@storybook/preset-create-react-app": "^7.6.20",
     "@storybook/react": "^7.6.20",
     "@storybook/react-webpack5": "^7.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "babel-plugin-named-exports-order": "^0.0.2",
     "canvas": "^2.11.2",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-storybook": "^0.6.13",
+    "husky": "^9.1.6",
     "jest-canvas-mock": "^2.5.1",
     "prop-types": "^15.8.1",
     "storybook": "^7.4.0",
